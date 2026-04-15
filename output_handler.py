@@ -11,6 +11,7 @@ def create_output_section(root):
 
 
 def display_output(output_box, text):
+    
     output_box.delete("1.0", tk.END)
     output_box.insert(tk.END, text)
 
