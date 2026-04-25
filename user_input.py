@@ -1,3 +1,4 @@
+# This file handles all user input related to getting the CV text, either by pasting or loading from a file. It also displays the welcome banner and validates the input.
 def display_banner():
     """Prints the welcome banner when the tool starts."""
     print("=" * 60)
@@ -61,11 +62,11 @@ def get_user_input():
     display_banner()
 
     print("How would you like to provide your CV?")
-    print("  1. Paste text directly")
-    print("  2. Load from a .txt file")
+    print("  1. Paste text directly") #the user can paste their CV text directly into the terminal, which is useful for quick input or if they have the CV in a format that can be easily copied.
+    print("  2. Load from a .txt file") #the user can specify a file path to a .txt file containing their CV, which is useful if they have the CV saved on their computer and prefer not to copy-paste it.
     print()
 
-    choice = input("Enter 1 or 2: ").strip()
+    choice = input("Enter 1 or 2: ").strip() # Get the user's choice and remove any extra whitespace, also ensures that if they accidentally hit space before or after, it won't cause an issue.
 
     if choice == "1":
         print()
@@ -74,16 +75,16 @@ def get_user_input():
         print()
         cv_text = get_cv_from_file()
     else:
-        # If invalid choice, ask again
+        # If invalid choice, ask again,incase thee user enters something else like 3 or a letter, we want to prompt them to enter a valid option instead of crashing or proceeding with invalid input.
         print("\nInvalid choice. Please enter 1 or 2.\n")
         return get_user_input()
 
-    # Validate that the CV is not empty
+    # Validate that the CV has text, if its empty, prompt the user to try again. This ensures that we don't proceed with an empty CV which would cause issues later on.
     if not cv_text.strip():
         print("\nNo CV text found. Please try again.\n")
         return get_user_input()
 
-    # Confirm how many words were received
+    # Confirm how many words were received so the user knows it was loaded correctly.
     word_count = len(cv_text.split())
     print(f"\nCV received — {word_count} words loaded.\n")
 
