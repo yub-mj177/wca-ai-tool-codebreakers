@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────
+
 # output_handler.py  |  Member 3 — Output Display & Save
 # CODEBREAKERS | AI-Powered CV Reviewer Tool
 # ─────────────────────────────────────────────────────────────
