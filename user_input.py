@@ -33,7 +33,8 @@ def get_cv_from_text():
 def get_cv_from_file():
     """
     Asks the user for a file path and reads the CV from that file.
-    Supports .txt files. Returns the file contents as a string.
+    Supports .txt files. Returns the file contents as an string
+
     """
     file_path = input("Enter the path to your CV file (.txt): ").strip()
 
