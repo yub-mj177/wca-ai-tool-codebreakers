@@ -10,6 +10,7 @@ import anthropic
 # This function constructs the full AI instruction using the
 # R-T-C-C-O framework before sending it to the Claude API.
 
+
 def build_prompt(cv_text):
     """
     Builds the R-T-C-C-O structured prompt by inserting
