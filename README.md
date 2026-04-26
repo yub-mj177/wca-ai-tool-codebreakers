@@ -2,7 +2,7 @@
 cv reviewer ai tool
 #  CODEBREAKERS — AI CV Reviewer Tool
 
-> **End of Module Group Project | Artificial Intelligence Course | April 2026**
+> **End of Module Group Project | Artificial Intelligence Course**
 > Built with Python + Claude AI | Powered by the Anthropic API
 
 ---
@@ -24,14 +24,14 @@ It was built to solve a real problem: thousands of qualified Kenyan job seekers 
 
 ---
 
-## 👥 Group Members
+##  Group Members
 
 | Name | GitHub | Role |
 |---|---|---|
-| [Wangari Christine ] | [@wangari262](https://github.com/wangari262) | Project Setup & User Input (`user_input.py`) |
-| [Lornah Muchiri] | [@lornah2008](https://github.com/lornah2008) | Prompt Design & API Call (`ai_engine.py`) |
-| [Ian Gachengo] | [@blackmilk](https://github.com/blackmilkx) | Output Display & Save (`output_handler.py`) |
-| [Mangale Ngome] | [@yub-mj177](https://github.com/yub-mj177) | Main Script & Report Lead (`main.py`) |
+| Wangari Christine  | [@wangari262](https://github.com/wangari262) | Project Setup & User Input (`user_input.py`) |
+| Lornah Muchiri | [@lornah2008](https://github.com/lornah2008) | Prompt Design & API Call (`ai_engine.py`) |
+| Ian Gachengo | [@blackmilk](https://github.com/blackmilkx) | Output Display & Save (`output_handler.py`) |
+| Mangale Ngome | [@yub-mj177](https://github.com/yub-mj177) | Main Script & Report Lead (`main.py`) |
 
 ---
 
@@ -55,8 +55,8 @@ wca-ai-tool-[GroupName]/
 ### Step 1 — Clone the repository
 
 ```bash
-git clone https://github.com/[username]/wca-ai-tool-[GroupName].git
-cd wca-ai-tool-[GroupName]
+git clone https://github.com/yub-mj177/wca-ai-tool-codebreakers.git
+cd wca-ai-tool-codebreakers
 ```
 
 ### Step 2 — Install dependencies
