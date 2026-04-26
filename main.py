@@ -1,7 +1,5 @@
-# ─────────────────────────────────────────────────────────────
-# main.py  |  Member 4 — Main Script & Integration
+
 # CODEBREAKERS | AI-Powered CV Reviewer Tool
-# ─────────────────────────────────────────────────────────────
 #
 # HOW TO RUN:
 #   1. Install dependencies:   pip install anthropic
@@ -11,8 +9,7 @@
 # WHAT IT DOES:
 #   Takes a user's CV as text input, sends it to Claude AI
 #   using a structured R-T-C-C-O prompt, and returns a
-#   detailed review with strengths, weaknesses, and improvements.
-# ─────────────────────────────────────────────────────────────
+#   detailed review with strengths, weaknesses, and improvement suggestions.
 
 import os
 
@@ -27,7 +24,7 @@ from output_handler import (                    # Member 3
 )
 
 
-# ── API KEY SETUP ─────────────────────────────────────────────
+# API KEY SETUP
 # The API key is read from an environment variable for security.
 
 
@@ -54,7 +51,7 @@ def get_api_key():
     return api_key
 
 
-# ── REPEAT OR EXIT ────────────────────────────────────────────
+# REPEAT OR EXIT 
 # After a review, ask the user if they want to review another CV.
 
 def ask_to_repeat():
@@ -66,7 +63,7 @@ def ask_to_repeat():
     return choice in ["yes", "y"]
 
 
-# ── MAIN FUNCTION ─────────────────────────────────────────────
+# MAIN FUNCTION 
 # Ties all modules together and runs the full tool flow.
 
 def main():
@@ -115,7 +112,7 @@ def main():
         print("\n" + "-" * 60 + "\n")
 
 
-# ── ENTRY POINT ───────────────────────────────────────────────
+# ENTRY POINT 
 # This block ensures main() only runs when the file is executed
 # directly, not when imported as a module by another script.
 
