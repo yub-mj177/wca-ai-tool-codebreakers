@@ -117,6 +117,6 @@ def call_ai_api(prompt, api_key):
         return None
 
     except Exception as e:
-        # Catch any other unexpected errors
+        # Catch any other unexpected errors.
         print(f"Unexpected error: {e}")
         return None
